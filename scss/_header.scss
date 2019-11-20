@@ -1,0 +1,97 @@
+.ba-header{
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index:1;
+	padding: 0;
+	background-size:cover;
+	
+}
+.ba-header-bar {
+	padding-top: 23px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	a{
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+ }
+.ba-menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	line-height: 1;
+	justify-content: space-around;
+	text-transform: uppercase;
+}
+.ba-main-nav{
+	display: none;
+
+	 @media screen and (max-width: $large - 1px){
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		background-color: rgba(#000, 0.6);
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.2s;
+		transition-property: transform, opacity, visibility;
+		transform: scale(0.8);
+ 
+		&.active{
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1);
+ 
+		}
+	} 
+}
+
+.ba-menu-toggle {
+	border: none;
+	background: none;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+	min-width: initial;
+	padding: 0;
+	height: auto;
+	line-height: 1;
+	margin: 0;
+ 
+	&:hover, &:focus{
+		background: none;
+		color: $primary-color;
+		outline: none;
+	}
+ }
+.ba-menu-toggle svg{
+	fill:currentColor;
+}
+.ba-menu a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+	padding: 5px 10px;
+}
+
+
+
+.ba-menu-form{
+	display: flex;
+	justify-content: flex-end;
+}

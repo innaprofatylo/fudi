@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&display=swap');
+
+
+@import "normalize";
+@import "layout";
+@import "elements";
+
+$primary-color: #f57365;
+
+$body-font-family: 'Lato', sans-serif;
+$text-color: #000000;
+$text-color-light: #fff;
+
+$medium: 640px;
+$large: 1024px;
+
+body{
+font: 300 16px/1.4 $body-font-family;
+}
+
+p{
+	margin: 0 0 30px;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 30px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: $text-color-light;
+}
+h1{
+font-size: 80px;
+line-height: 1;
+margin-bottom: 30px;
+font-weight: 700;
+
+@media screen and (min-width: $medium){
+	font-size: 100px;
+}
+}
+h2{
+font-size: 84px;
+}
+h5{
+font-size: 18px;
+color: $text-color;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1220px;
+}
+
+@import "header";
+
+.ba-section{
+	padding: 100px 0;
+	margin: 0;
+
+	&--main{
+		background: #44464d url(../img/bgmain.png) 50% no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 0;
+	}
+
+	&--intro{
+		padding: 245px 0 210px;
+	}
+
+	&--addition{
+		background-color: #f7f7f7;
+	}
+	&--reviews{
+		background: #44464d url(../img/bgsection.png) 50% no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	
+
+	}
+
+}
+@import "section-intro";
+@import "offers";
+
+.ba-title{
+	&:after{ 
+		content: '';
+    display: block;
+    height: 1px;
+    background-color: $primary-color;
+    max-width: 88px;
+    margin: 7px auto 0;
+		
+	}
+	&--addition{
+		margin-top: 180px;
+
+	}
+}
+.ba-title--addition{
+	@media screen and (min-width:$medium){
+		&:after{ 
+			content: '';
+		 display: block;
+		 height: 1px;
+		 background-color: $primary-color;
+		 max-width: 88px;
+		 margin: 7px auto 0 0;
+			
+		}
+	}
+}
+.ba-information{
+	margin-top: 30px;
+	text-align: center;
+
+	@media screen and (min-width:$medium){
+		margin-top: 80px;
+		text-align: left;
+	}
+}
+@import "reviews";

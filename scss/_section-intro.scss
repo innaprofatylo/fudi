@@ -1,0 +1,33 @@
+.ba-text-center{
+	text-align: center;
+color: #fff;
+}
+.ba-text-main{
+	font-family: 'Times New Roman';
+	font-style: italic;
+	font-size: 36px;
+	font-weight: 700;
+	opacity: 0.8;
+	letter-spacing: 0.5px;
+	margin: 0;
+}
+button{
+	border: 3px solid #fff;
+	background-color: inherit;
+	font-family: $body-font-family;
+	font-weight: 700;
+	font-size: 28px;
+	padding: 10px 55px;
+	margin-bottom: 40px;
+}
+.ba-text-about{
+	font-family: $body-font-family;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 0.7px;
+
+	span{
+		text-decoration: underline;
+	}
+
+}

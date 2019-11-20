@@ -1,0 +1,40 @@
+.ba-reviews{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+.ba-input{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ba-foto{
+	border: 4px solid #948a93;
+	border-radius: 50%;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+q{
+	font-size: 30px;
+	font-family: $body-font-family;
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+	color: #796d79;
+	margin-bottom: 30px;
+}
+q + p{
+	font-size: 18px;
+	font-family: $body-font-family;
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+	color: #796d79;
+	margin-bottom: 40px;
+}
+
+input + input{
+	margin-left: 5px;
+}
+

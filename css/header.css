@@ -1,0 +1,43 @@
+.ba-header {
+  /* background: #ccc; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background-image: -webkit-linear-gradient(top, black, transparent);
+  background-image: -o-linear-gradient(top, black, transparent);
+  background-image: linear-gradient(to bottom, black, transparent); }
+
+.ba-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1; }
+  .ba-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700; }
+
+.ba-menu-toggle {
+  border: none;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  min-width: initial;
+  padding: 0;
+  height: auto;
+  line-height: 1;
+  margin-top: 17px; }
+  .ba-menu-toggle:hover, .ba-menu-toggle:focus {
+    background: none;
+    color: #f57365;
+    border: none; }
+
+.ba-menu-toggle svg {
+  fill: currentColor; }
