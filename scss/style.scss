@@ -40,6 +40,10 @@ font-weight: 700;
 h2{
 font-size: 84px;
 }
+h4{
+	font-size: 36px;
+	font-weight: 700;
+}
 h5{
 font-size: 18px;
 color: $text-color;
@@ -66,18 +70,27 @@ color: $text-color;
 	}
 
 	&--intro{
-		padding: 245px 0 210px;
+		padding: 235px 0 205px;
+	}
+	&--offers{
+		padding: 100px 0 55px;
 	}
 
 	&--addition{
 		background-color: #f7f7f7;
+		
 	}
 	&--reviews{
 		background: #44464d url(../img/bgsection.png) 50% no-repeat;
 	background-size: cover;
 	min-height: 100vh;
-	
-
+	margin-top: -282px;
+	position: relative;
+z-index: 5;
+padding: 85px 0 0px;
+	}
+	&--recipes{
+		padding: 97px 0 100px;
 	}
 
 }
@@ -85,6 +98,8 @@ color: $text-color;
 @import "offers";
 
 .ba-title{
+	text-align: center;
+
 	&:after{ 
 		content: '';
     display: block;
@@ -94,12 +109,17 @@ color: $text-color;
     margin: 7px auto 0;
 		
 	}
-	&--addition{
-		margin-top: 180px;
-
+	&__addition{
+		text-align: left;
+		margin-top: 20px;
+	}
+	&__recipes{
+		margin-bottom: 40px;
+		letter-spacing: 0.6px;
 	}
 }
-.ba-title--addition{
+.ba-title__addition{
+	
 	@media screen and (min-width:$medium){
 		&:after{ 
 			content: '';
@@ -122,3 +142,4 @@ color: $text-color;
 	}
 }
 @import "reviews";
+@import "recipes";

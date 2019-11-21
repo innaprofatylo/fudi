@@ -8,6 +8,9 @@
 }
 .ba-text{
 	text-align: center;
+	&__addition{
+		text-align-last: left;
+	}
 }
 .ba-list{
 	display: flex;

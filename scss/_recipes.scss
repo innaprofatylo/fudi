@@ -1,0 +1,53 @@
+.ba-row{
+	margin: 0 0 0 43px;
+	
+	[class^="ba-col"]{
+		margin-left: 0;
+		padding: 0;
+	}
+}
+.ba-italian{
+	width: 19%;
+	margin-bottom: 0;
+
+}
+.ba-post{
+	color: #ffffff;
+	text-decoration: none;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+	&:hover{
+		color: #fff;
+		opacity: 0.8;
+	}
+}
+.ba-post img{
+	display: block;
+	width: 100%;
+	margin-bottom: 50px;
+
+}
+.ba-post-body{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	letter-spacing: 0.3px;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+	z-index: 1;
+	}
+	.ba-post-title{
+	text-align: center;
+	margin: 0;
+	letter-spacing: 0.5px;
+	}
+	.ba-post-meta{
+		font-size: 15px;
+		text-align: center;
+		margin: 72px 0 0;
+	}
+	
