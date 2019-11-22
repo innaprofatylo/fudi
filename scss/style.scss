@@ -32,6 +32,7 @@ font-size: 80px;
 line-height: 1;
 margin-bottom: 30px;
 font-weight: 700;
+letter-spacing: 4px;
 
 @media screen and (min-width: $medium){
 	font-size: 100px;
@@ -48,6 +49,7 @@ h5{
 font-size: 18px;
 color: $text-color;
 }
+p{margin: 0;}
 
 /* Layout */
 .ba-container{
@@ -70,27 +72,26 @@ color: $text-color;
 	}
 
 	&--intro{
-		padding: 235px 0 205px;
+		padding: 190px 0 240px;
 	}
 	&--offers{
-		padding: 100px 0 55px;
+		padding: 100px 0 42px;
 	}
 
 	&--addition{
 		background-color: #f7f7f7;
-		
+		padding: 110px 0 112px;
 	}
 	&--reviews{
-		background: #44464d url(../img/bgsection.png) 50% no-repeat;
+		background: #4a3949 url(../img/bgreviews.png) 50% no-repeat;
 	background-size: cover;
-	min-height: 100vh;
-	margin-top: -282px;
+	margin-top: -340px;
 	position: relative;
 z-index: 5;
-padding: 85px 0 0px;
+padding: 81px 0 80px;
 	}
 	&--recipes{
-		padding: 97px 0 100px;
+		padding: 97px 0 55px;
 	}
 
 }
@@ -99,6 +100,8 @@ padding: 85px 0 0px;
 
 .ba-title{
 	text-align: center;
+	letter-spacing: 1px;
+	
 
 	&:after{ 
 		content: '';
@@ -109,14 +112,21 @@ padding: 85px 0 0px;
     margin: 7px auto 0;
 		
 	}
+	&__offers{
+		margin-bottom: 12px;
+	}
 	&__addition{
 		text-align: left;
-		margin-top: 20px;
+		margin-bottom: 12px;
+		line-height: 1.6;
 	}
 	&__recipes{
 		margin-bottom: 40px;
 		letter-spacing: 0.6px;
 	}
+}
+a + a{
+	margin-left: 7px;
 }
 .ba-title__addition{
 	
@@ -127,19 +137,50 @@ padding: 85px 0 0px;
 		 height: 1px;
 		 background-color: $primary-color;
 		 max-width: 88px;
-		 margin: 7px auto 0 0;
+		 margin: 5px auto 0 0;
 			
 		}
 	}
 }
+.ba-row--addition{
+	justify-content: space-around;
+
+	&:first-child{
+		padding: 0;
+	}
+}
 .ba-information{
-	margin-top: 30px;
+	margin-top: 70px;
 	text-align: center;
 
 	@media screen and (min-width:$medium){
-		margin-top: 80px;
+		margin-top: 67px;
 		text-align: left;
+		
 	}
 }
 @import "reviews";
 @import "recipes";
+footer{
+	background-color: #f7f7f7;
+	padding: 38px 0;
+	border-top: 0.5px solid #e2e2e2ff;
+}
+.ba-footer{
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	font-weight: 300;
+	color: #9b9b9b;
+
+	address{
+		font-style: normal;
+		letter-spacing: 2.5px;
+	}
+	
+	span{
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #131313;
+	}
+}

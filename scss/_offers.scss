@@ -8,8 +8,14 @@
 }
 .ba-text{
 	text-align: center;
+	letter-spacing: 0.9px;
+	line-height: 1.65;
 	&__addition{
 		text-align-last: left;
+		margin-bottom: 30px;
+		p{
+			margin-bottom: 30px;
+		}
 	}
 }
 .ba-list{

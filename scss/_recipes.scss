@@ -1,15 +1,17 @@
 .ba-row{
-	margin: 0 0 0 43px;
+	margin: 0 0 50px 45px;
 	
-	[class^="ba-col"]{
+	[class^="ba-col-20"]{
 		margin-left: 0;
 		padding: 0;
-	}
-}
-.ba-italian{
-	width: 19%;
-	margin-bottom: 0;
 
+		@media screen and (max-width:$large - 1px){
+			width: 50%;
+		}
+		@media screen and (max-width:$medium - 1px){
+			width: 100%;
+		}
+	}
 }
 .ba-post{
 	color: #ffffff;
@@ -50,4 +52,32 @@
 		text-align: center;
 		margin: 72px 0 0;
 	}
+	.ba-col-statistic{
+				
+	padding: 0;
 	
+	
+		&__figures{
+			font-size: 36px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		margin: 0;
+		
+		}
+
+	&__name{
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0.7px;
+		text-align: center;
+		margin: 0;
+	}
+		
+	}
+	.ba-row--statistic{
+		display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 0;
+}
